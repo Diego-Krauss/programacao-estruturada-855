@@ -19,7 +19,7 @@ int main() {
 int v1[max];
 int i;
 	for (i=0;i<max;i++){
-		printf("Digite um número :");
+		printf("Digite um nÃºmero :");
 		scanf("%d",&v1[i]);
 	if (numeroPrimo(v1[i])){
 		printf("sou numero primo %d estou na posicao %d

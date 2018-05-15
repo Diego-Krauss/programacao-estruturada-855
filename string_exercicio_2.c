@@ -6,7 +6,7 @@ int main() {
 int v1[max];
 int i, maior = NULL, menor = NULL;
 	for (i=0;i<max;i++){
-		printf("Digite um número :");
+		printf("Digite um nÃºmero :");
 		scanf("%d",&v1[i]);
 	if (i == 0){
 		maior = v1[i];

@@ -16,26 +16,30 @@ int main()
 
 	while (flag == 0) {
 		
-		printf("Esse numero eh par? S/N = ");
+		printf("Esse numero eh par? s/n = ");
 		scanf(" %c", &resp);
 		printf("Verificando possibilidades...\n\n");
 		
-		if(resp == 'S') {
+		if(resp == 's') {
+		    printf("Divida o número por 2.\n");
+		    printf("---------------------------\n\n");
 			cont++;
 		}	
 		else 
 		{
-			printf("Esse numero eh impar? S/N = ");
+			printf("Esse numero eh impar? s/n = ");
 			scanf(" %c", &resp);
 			printf("Verificando possibilidades...\n\n");
 			
-			if(resp == 'S') 
+			if(resp == 's') 
 			{
-				printf("O numero eh 1? S/N = ");
+			    printf("Subtraia 1 e Divida o número por 2.\n");
+			    printf("---------------------------\n\n");
+				printf("O numero é menor ou igual a 1? s/n = ");
 				scanf(" %c", &resp);
 				printf("Verificando possibilidades...\n\n");
 				
-				if(resp == 'S') {
+				if(resp == 's') {
 					flag = 1;
 				}
 				
@@ -43,13 +47,13 @@ int main()
 				cont++;
 			} 
 			else {
-				printf("Erro, informe uma resposta valida! (S/N)\n\n");
+				printf("Erro, informe uma resposta valida! (s/n)\n\n");
 			}		
 		}
 	}
-	
-	printf("O numero que vc pensou eh: %d\n", result);
+	printf("------------------------------\n");
+	printf("O numero que vc pensou é: %d\n", result);
+	printf("------------------------------\n\n");
 	system("pause");
 	return 0;	
 }
-
